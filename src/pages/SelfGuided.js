@@ -17,7 +17,7 @@ import gifPlaceholder from "../assets/gifs/gifPlaceholder.gif";
 // Audio
 import audio from "../assets/audio/audio.mp3"
 
-const SelfGuided = ({ flower }) => {  
+const SelfGuided = () => {  
 
   useEffect(() => {
     const body = document.getElementsByTagName('body')[0]
@@ -46,27 +46,27 @@ const SelfGuided = ({ flower }) => {
 
   // Link spheres
   // panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 600, `${flower}`);
+  panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
 
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
-  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600, `${flower}`);
-  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600, `${flower}`);
+  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
+  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
 
   // panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 600, `${flower}`);
+  panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
 
   // panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 600, `${flower}`);
+  panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
 
   // panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 600, `${flower}`);
+  panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
 
   // panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 600, `${flower}`);
+  panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
 
   // panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 600, `${flower}`);
+  panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
 
 
   // Create viewer and add panoramas

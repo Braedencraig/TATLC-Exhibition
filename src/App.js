@@ -3,7 +3,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import SelfGuided from "./pages/SelfGuided";
 import Burger from "./components/Burger";
-import flower from "./assets/next.png"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -18,7 +17,7 @@ function App() {
             <About />
           </Route>
           <Route path="/self-guided">
-            <SelfGuided flower={flower} />
+            <SelfGuided />
           </Route>
           <Route path="/">
             <Home />
