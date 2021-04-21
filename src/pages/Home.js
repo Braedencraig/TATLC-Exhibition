@@ -14,7 +14,7 @@ export default function Home() {
   })
 
   return (
-    <div className={`fullpage ${show ? "" : "hide"}`}>
+    <div className={`home fullpage ${show ? "" : "hide"}`}>
       <div className="intro-title">
         <h1>The Advantages Of Tender Loving Care</h1>
         <h2>By Laura Kay Keeling</h2>
@@ -29,9 +29,6 @@ export default function Home() {
         <p>Thank you for being here!</p>
       </div>
       <div className="cyoa-buttons">
-        <Link to="/guided">
-          <button onClick={() => setShow(false)}>Take The Guided Tour</button>
-        </Link>
         <Link to="/self-guided">
           <button onClick={() => setShow(false)}>See Yourself Around</button>
         </Link>

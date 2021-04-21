@@ -327,6 +327,9 @@ video {
   0% {
     opacity:0;
   }
+  50% {
+    opacity: 0;
+  }
   100% {
     opacity:1;
   }
@@ -335,6 +338,9 @@ video {
 @-moz-keyframes fadeIn {
   0% {
     opacity:0;
+  }
+  50% {
+    opacity: 0;
   }
   100% {
     opacity:1;
@@ -345,6 +351,9 @@ video {
   0% {
     opacity:0;
   }
+  50% {
+    opacity: 0;
+  }
   100% {
     opacity:1;
   }
@@ -353,6 +362,9 @@ video {
 @-o-keyframes fadeIn {
   0% {
     opacity:0;
+  }
+  50% {
+    opacity: 0;
   }
   100% {
     opacity:1;
@@ -363,17 +375,21 @@ video {
   0% {
     opacity:0;
   }
+  50% {
+    opacity: 0;
+  }
   100% {
     opacity:1;
   }
 }
 
 .fade-in {
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 10s;
-  -moz-animation: fadeIn ease 10s;
-  -o-animation: fadeIn ease 10s;
-  -ms-animation: fadeIn ease 10s;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+  pointer-events: none;
 }
 
 .artist, .land {
@@ -488,13 +504,56 @@ p.location {
   flex-direction: column;
   font-weight: bold;
   align-items: center;
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 10s;
-  -moz-animation: fadeIn ease 10s;
-  -o-animation: fadeIn ease 10s;
-  -ms-animation: fadeIn ease 10s;
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
 }
 
 .no-touch {
   pointer-events: none;
+}
+
+.home {
+  height: 10vh;
+}
+
+ul {
+  margin: 150px auto 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  /* width: 600px; */
+  text-align: center;
+}
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+a.list {
+  color:  #444444;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a.list:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background:  #444444;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a.list:hover:after {
+  width: 100%;
+  left: 0;
 }

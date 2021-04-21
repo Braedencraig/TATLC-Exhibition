@@ -14,11 +14,10 @@ import seven from "../assets/spheres/seven.jpg";
 // Artworks
 import imagePlaceholder from "../assets/art/artworkPlaceholder.jpg";
 import gifPlaceholder from "../assets/gifs/gifPlaceholder.gif";
-// import imageTest from "../assets/next.png"
 // Audio
 import audio from "../assets/audio/audio.mp3"
 
-export default function SelfGuided() {  
+const SelfGuided = ({ flower }) => {  
 
   useEffect(() => {
     const body = document.getElementsByTagName('body')[0]
@@ -46,15 +45,29 @@ export default function SelfGuided() {
   panorama8 = new PANOLENS.ImagePanorama(one);
 
   // Link spheres
-  panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
-  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
-  // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600, `${imageTest}`);
-  panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
+  // panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
+  panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 600, `${flower}`);
+
+  // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
+  // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
+  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600, `${flower}`);
+  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600, `${flower}`);
+
+  // panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
+  panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 600, `${flower}`);
+
+  // panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
+  panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 600, `${flower}`);
+
+  // panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
+  panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 600, `${flower}`);
+
+  // panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
+  panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 600, `${flower}`);
+
+  // panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
+  panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 600, `${flower}`);
+
 
   // Create viewer and add panoramas
   viewer = new PANOLENS.Viewer({ autoHideInfospot: false });
@@ -73,56 +86,57 @@ export default function SelfGuided() {
     container.classList.add('fade-in')
     setTimeout(() => {
       container.classList.remove('fade-in')
-    }, 6000)
+    }, 1000)
   });
 
   panorama2.addEventListener( 'enter-fade-start', function(){
     container.classList.add('fade-in')
     setTimeout(() => {
       container.classList.remove('fade-in')
-    }, 6000)
+    }, 1000)
   });
 
   panorama3.addEventListener( 'enter-fade-start', function(){
     container.classList.add('fade-in')
     setTimeout(() => {
       container.classList.remove('fade-in')
-    }, 6000)
+    }, 1000)
   });
 
   panorama4.addEventListener( 'enter-fade-start', function(){
     container.classList.add('fade-in')
     setTimeout(() => {
       container.classList.remove('fade-in')
-    }, 6000)
+    }, 1000)
   });
 
   panorama5.addEventListener( 'enter-fade-start', function(){
     container.classList.add('fade-in')
     setTimeout(() => {
       container.classList.remove('fade-in')
-    }, 6000)
+    }, 1000)
   });
 
   panorama6.addEventListener( 'enter-fade-start', function(){
     container.classList.add('fade-in')
     setTimeout(() => {
       container.classList.remove('fade-in')
-    }, 6000)
+    }, 1000)
   });
 
   panorama7.addEventListener( 'enter-fade-start', function(){
     container.classList.add('fade-in')
     setTimeout(() => {
       container.classList.remove('fade-in')
-    }, 6000)
+    }, 1000)
   });
 
   panorama8.addEventListener( 'enter-fade-start', function(){
+    container.classList.add('fade-in')
     const end = Array.from(document.getElementsByClassName('end'))
     setTimeout(() => {
       end[0].classList.add('show')
-    }, 3000)
+    }, 1000)
   });  
 
   // Gif loader
@@ -294,6 +308,7 @@ export default function SelfGuided() {
         src={audio}
         playing={true}
         loop={true}
+        volume={0.7}
       />
       <div className="end">
         <h2>Thank you for coming!</h2>
@@ -302,3 +317,5 @@ export default function SelfGuided() {
     </>
   );
 }
+
+export default SelfGuided

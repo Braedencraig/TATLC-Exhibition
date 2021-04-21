@@ -11,14 +11,21 @@ const Burger = () => {
             document.getElementById("react-burger-cross-btn").click();
           }}
         >
-          <Link to="/">Home</Link>
+          <Link className="list" to="/">Home</Link>
         </li>
         <li
           onClick={() => {
             document.getElementById("react-burger-cross-btn").click();
           }}
         >
-          <Link to="/about">About</Link>
+          <Link className="list" to="/about">About</Link>
+        </li>
+        <li
+          onClick={() => {
+            document.getElementById("react-burger-cross-btn").click();
+          }}
+        >
+          <Link className="list" to="/self-guided">Tour</Link>
         </li>
       </ul>
     </Menu>
