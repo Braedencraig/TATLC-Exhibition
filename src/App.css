@@ -514,7 +514,7 @@ p.location {
 .no-touch {
   pointer-events: none;
 }
-
+/* 
 .home {
   height: 10vh;
 }
@@ -524,7 +524,7 @@ ul {
   padding: 0;
   list-style: none;
   display: table;
-  /* width: 600px; */
+  width: 600px;
   text-align: center;
 }
 li {
@@ -556,4 +556,4 @@ a.list:after {
 a.list:hover:after {
   width: 100%;
   left: 0;
-}
+} */
