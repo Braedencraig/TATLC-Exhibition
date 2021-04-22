@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   overflow: hidden;
   background-color: #444444;
   color: white;
@@ -515,6 +515,7 @@ p.location {
 .no-touch {
   pointer-events: none;
 }
+
 /* 
 .home {
   height: 10vh;
