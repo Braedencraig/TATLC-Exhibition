@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Burger = () => {
   return (
-    <Menu right>
+    <Menu right slide>
       <ul>
         <li
           onClick={() => {
