@@ -23,7 +23,7 @@ const SelfGuided = () => {
   useEffect(() => {
     const body = document.getElementsByTagName('body')[0]
     body.style.overflow = 'hidden'
-  })
+  }, [])
 
   let panorama1, 
       panorama2, 
