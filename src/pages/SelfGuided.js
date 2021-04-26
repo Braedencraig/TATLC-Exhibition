@@ -22,7 +22,9 @@ const SelfGuided = () => {
 
   useEffect(() => {
     const body = document.getElementsByTagName('body')[0]
+    const canvas = document.getElementsByTagName('canvas')[0]
     body.style.overflow = 'hidden'
+    canvas.style.height = '100vh !important'
   })
 
   let panorama1, 
