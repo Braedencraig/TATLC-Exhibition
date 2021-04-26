@@ -71,7 +71,7 @@ const SelfGuided = () => {
 
 
   // Create viewer and add panoramas
-  viewer = new PANOLENS.Viewer({ autoHideInfospot: false });
+  viewer = new PANOLENS.Viewer({ autoHideInfospot: false, controlBar: false });
   viewer.add(panorama1);
   viewer.add(panorama2);
   viewer.add(panorama3);
