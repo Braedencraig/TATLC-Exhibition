@@ -15,6 +15,7 @@ a:visited {
 
 canvas {
   width: inherit !important;
+  min-height: 600px !important;
   /* height: 100vh !important; */
 }
 
