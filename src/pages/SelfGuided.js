@@ -14,6 +14,7 @@ import seven from "../assets/spheres/seven.jpg";
 // Artworks
 import imagePlaceholder from "../assets/art/artworkPlaceholder.jpg";
 import gifPlaceholder from "../assets/gifs/gifPlaceholder.gif";
+import placeholder from "../assets/next.png"
 // Audio
 import audio from "../assets/audio/audio.mp3"
 
@@ -46,27 +47,27 @@ const SelfGuided = () => {
 
   // Link spheres
   // panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
+  panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
 
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
-  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
-  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
+  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 1000, `${placeholder}`);
+  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 1000, `${placeholder}`);
 
-  // panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
+  // panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
+  panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
 
-  // panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
+  // panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
+  panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
 
-  // panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
+  // panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
+  panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
 
-  // panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
+  // panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
+  panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
 
-  // panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
-  panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 600);
+  // panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
+  panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
 
 
   // Create viewer and add panoramas
