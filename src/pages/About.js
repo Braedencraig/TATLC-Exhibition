@@ -33,77 +33,83 @@ export default function About() {
         </p>
       </div>
       <div className="divider"></div>
-      <div className="about-title artist">
-        <h3>About The Artist</h3>
-      </div>
-      <div className="about-blurb artist-blurb">
-        <p>Laura Kay Keeling is an artist whose work encompasses analog photography, video, collage and installation-based projects. Her work explores how we form connections with each other and nature. Exploring and unpacking emotions through the creation of new work, while examining concepts related to “the visitor” as spoken about in Rumi’s Poem ‘The Guest House’. Laura feels very connected to and at peace in nature; her new works explore ideas relating to plant sentience and reciprocal care.</p>
-      </div>
-      <div className="info">
-        <img src={image} alt="The artist, Laura Kay Keeling" />
-        <p className="infoText one"><a href="www.laurakaykeeling.com">www.laurakaykeeling.com</a></p>
-        <p className="infoText">Contact: <a href="mailto:infolaurakk@gmail.com">infolaurakk@gmail.com</a></p>
-        <div className="socials">
-          <SocialIcon
-            fgColor="black"
-            bgColor="white"
-            url="https://www.instagram.com/laurakaykeeling"
-          />
-          <SocialIcon
-            fgColor="black"
-            bgColor="white"
-            url="https://twitter.com/laurakaykeeling"
-          />
+      <div className="artist-flex-big">
+        <div className="flex-one">
+          <div className="about-title artist">
+            <h3>About The Artist</h3>
+          </div>
+          <div className="about-blurb artist-blurb">
+            <p>Laura Kay Keeling is an artist whose work encompasses analog photography, video, collage and installation-based projects. Her work explores how we form connections with each other and nature. Exploring and unpacking emotions through the creation of new work, while examining concepts related to “the visitor” as spoken about in Rumi’s Poem ‘The Guest House’. Laura feels very connected to and at peace in nature; her new works explore ideas relating to plant sentience and reciprocal care.</p>
+          </div>
         </div>
-        <div className="mailing-list">
-        <h3>Sign Up For Mailing List</h3>
-        <p>{msg}</p>
-        {!success && (
-          <form method="post" name="google-sheet">
-            <div className="form-group">
-              <input
-                type="text"
-                name="Email"
-                placeholder="Your Email "
-                value={value}
-                onChange={(e) => setValue(e.target.value)}
-              />
-            </div>
-            <div className="submit-btn">
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  const emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                  const validEmail = value.match(emailFormat);
-                  if (validEmail === null) {
-                    setMsg("Please enter a valid email address");
-                  }
-                  if (validEmail) {
-                    fetch(scriptURL, {
-                      method: "POST",
-                      body: new FormData(form),
-                    })
-                      .then((response) => {
-                        setMsg("Thanks for subscribing!");
-                        setSuccess(true);
+        <div className="flex-two">
+          <div className="info">
+          <img src={image} alt="The artist, Laura Kay Keeling" />
+          <p className="infoText one"><a href="www.laurakaykeeling.com">www.laurakaykeeling.com</a></p>
+          <p className="infoText">Contact: <a href="mailto:infolaurakk@gmail.com">infolaurakk@gmail.com</a></p>
+          <div className="socials">
+            <SocialIcon
+              fgColor="black"
+              bgColor="white"
+              url="https://www.instagram.com/laurakaykeeling"
+            />
+            <SocialIcon
+              fgColor="black"
+              bgColor="white"
+              url="https://twitter.com/laurakaykeeling"
+            />
+          </div>
+          <div className="mailing-list">
+          <h3>Sign Up For Mailing List</h3>
+          <p>{msg}</p>
+          {!success && (
+            <form method="post" name="google-sheet">
+              <div className="form-group">
+                <input
+                  type="text"
+                  name="Email"
+                  placeholder="Your Email "
+                  value={value}
+                  onChange={(e) => setValue(e.target.value)}
+                />
+              </div>
+              <div className="submit-btn">
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    const validEmail = value.match(emailFormat);
+                    if (validEmail === null) {
+                      setMsg("Please enter a valid email address");
+                    }
+                    if (validEmail) {
+                      fetch(scriptURL, {
+                        method: "POST",
+                        body: new FormData(form),
                       })
-                      .catch((error) => {
-                        setMsg("Please enter a valid email address");
-                      });
-                  } else {
-                    setMsg("Please enter a valid email address");
-                  }
-                }}
-                type="submit"
-                name="submit"
-                value="Submit"
-              >
-                Submit
-              </button>
+                        .then((response) => {
+                          setMsg("Thanks for subscribing!");
+                          setSuccess(true);
+                        })
+                        .catch((error) => {
+                          setMsg("Please enter a valid email address");
+                        });
+                    } else {
+                      setMsg("Please enter a valid email address");
+                    }
+                  }}
+                  type="submit"
+                  name="submit"
+                  value="Submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+            )}
             </div>
-          </form>
-        )}
-      </div>
+          </div>
+        </div>
       </div>
       <div className="divider"></div>
       <div className="about-title land">
@@ -130,7 +136,9 @@ export default function About() {
       <div className="about-blurb thanks">
           <div className="flex-contact">
             <p>
-              Thank you to the <a href="https://scotiabankcontactphoto.com/about/">Scotiabank CONTACT Photography Festival </a> for including The Advantages of Tender Loving Care as a Featured Exhibition in this year's festival, and thank you to the <a href="https://www.arts.on.ca/">Ontario Arts Council</a> for their generous exhibition support.
+              Thank you to the <a href="https://scotiabankcontactphoto.com/about/">Scotiabank CONTACT Photography Festival </a> for including The Advantages of Tender Loving Care as a Featured Exhibition in this year's festival.
+              </p>
+              <p>Thank you to the <a href="https://www.arts.on.ca/">Ontario Arts Council</a> for their generous exhibition support.
             </p>
             <div className="img-flex">
               <img src={contact} alt="Scotiabank CONTACT Photography Festival Logo"/>

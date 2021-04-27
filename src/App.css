@@ -14,8 +14,8 @@ a:visited {
 }
 
 canvas { 
-  height: 100vh; 
-  width: 100vw; 
+  height: 100vh !important; 
+  width: 100vw !important; 
   display: block;
 }
 
@@ -39,6 +39,10 @@ canvas {
   height: 30px;
   right: 36px;
   top: 36px;
+}
+
+.bm-burger-button:visited {
+  display: none;
 }
 
 .divider {
@@ -117,14 +121,14 @@ h2 {
   color: white;
 }
 
-.fullpage {
+/* .fullpage {
   height: 100vh;
-}
+} */
 
 .intro-title,
 .about-title {
   font-size: 30px;
-  margin-top: 10%;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -168,6 +172,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: 2.5%;
+  margin-bottom: 30px;
 }
 
 .intro-text p,
@@ -429,7 +434,6 @@ p.location {
 .info, .thanks {
   display: flex;
   flex-direction: column;
-  width: 66%;
   margin: 0 auto;
   align-items: center;
 }
@@ -446,6 +450,21 @@ p.location {
 .infoText {
   margin: 0;
   padding: 0;
+  
+}
+
+.infoText a, .flex-contact a {
+  color: white !important;
+  text-decoration: underline;
+}
+
+.infoText a:hover, .flex-contact a:hover, .intro-text a:hover {
+  opacity: 0.7;
+}
+
+input {
+  background: white;
+  color: #444444;
 }
 
 .one {
@@ -529,46 +548,94 @@ p.location {
   pointer-events: none;
 }
 
-/* 
-.home {
-  height: 10vh;
+.socials a {
+  transition: all 0.3s;
 }
 
-ul {
-  margin: 150px auto 0;
-  padding: 0;
-  list-style: none;
-  display: table;
-  width: 600px;
-  text-align: center;
+.socials a:hover {
+  opacity: 0.7;
 }
-li {
-  display: table-cell;
-  position: relative;
-  padding: 15px 0;
+
+.end h2 {
+  margin-top: 100px;
+  width: 80%;
 }
-a.list {
-  color:  #444444;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-  display: inline-block;
-  padding: 15px 20px;
-  position: relative;
+
+.end p {
+  width: 80%;
 }
-a.list:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background:  #444444;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+
+a:link, a:visited {
+  color: #444444;
 }
-a.list:hover:after {
-  width: 100%;
-  left: 0;
-} */
+
+.artist-flex-big {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.info {
+  margin-top: 30px;
+}
+
+.about-blurb p {
+  font-size: 26px;
+  text-align: left;
+  width: 75%;
+}
+
+.mailing-list h3 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.mailing-list {
+  margin-bottom: 30px;
+}
+
+.flex-one {
+  width: 55%;
+}
+
+.thanks {
+  margin: 30px 0;
+}
+
+.end a {
+  color: white;
+  transition: all 0.3s;
+}
+
+.end a:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 1200px) {
+  .intro-title h1 {
+    font-size: 50px;
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .artist-flex-big {
+    flex-direction: column;
+    
+  }
+
+  .flex-one {
+    width: 100%;
+  }
+
+  .info img {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  
+  .end h2 {
+    margin-top: 100px;
+    width: 80%;
+  }
+}
