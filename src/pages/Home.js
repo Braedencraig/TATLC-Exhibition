@@ -18,15 +18,13 @@ export default function Home() {
       <div className="intro-title">
         <h1>The Advantages Of Tender Loving Care</h1>
         <h2>By Laura Kay Keeling</h2>
-        <h2>Contact 2021 Featured Exhibtion</h2>
       </div>
       <div className="intro-text">
         <p>
           Welcome to The Advantages of Tender Loving Care a Featured Exhibition in the Scotiabank CONTACT Photography Festival by Laura Kay Keeling. This exhibition features the first artworks in Keeling’s new series of moving images and collages that merge sourced imagery with scanned floral elements set in a naturalistic landscape with accompanying audio.
         </p>
-        <p>Instructions: Click on the flowers to move from sphere to sphere, and explore the immersive panoramas to discover Laura's works.</p>
-        <p>For a full image list with details about the work, please visit the About Page.</p>
-        <p>Thank you for being here!</p>
+        <p>Instructions: Click or touch the flowers to move from sphere to sphere, and explore the immersive panoramas to discover Laura's works. You can zoom in and out by using your fingers or touchpad, pinching in to zoom-in, or stretching out to zoom-out.</p>
+        <p>For a full image list with details about the works, please visit the <a href="/about">about page</a>. Thank you for being here!</p> 
       </div>
       <div className="cyoa-buttons">
         <Link to="/self-guided">

@@ -151,7 +151,8 @@ const SelfGuided = () => {
     side: THREE.DoubleSide,
   });
   const planeOne = new THREE.Mesh(geometryOne, materialOne);
-  planeOne.position.set(-30, 100, 340);
+  planeOne.position.set(-30, 230, 340);
+  planeOne.rotation.x -= 0.3;
   panorama1.add(planeOne);
 
   // // Sphere two artwork - contains two & three
@@ -177,8 +178,10 @@ const SelfGuided = () => {
   });
   const geometryTwo = new THREE.PlaneGeometry(300, 300, 300);
   const planeTwo = new THREE.Mesh(geometryTwo, materialTwo);
-  planeTwo.position.set(-160, 220, 420);
-  planeTwo.rotation.y -= 0.3;
+  planeTwo.position.set(-240, 220, 420);
+  // planeTwo.rotation.y -= 0.3;
+  // planeTwo.rotation.x -= 0.3
+  // planeTwo.rotation.z -= 0.1
   panorama2.add(planeTwo);
 
   const geometryThree = new THREE.PlaneGeometry(300, 300, 300);
