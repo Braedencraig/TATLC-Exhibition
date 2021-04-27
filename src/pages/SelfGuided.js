@@ -178,10 +178,8 @@ const SelfGuided = () => {
   });
   const geometryTwo = new THREE.PlaneGeometry(300, 300, 300);
   const planeTwo = new THREE.Mesh(geometryTwo, materialTwo);
-  planeTwo.position.set(-240, 220, 420);
-  // planeTwo.rotation.y -= 0.3;
-  // planeTwo.rotation.x -= 0.3
-  // planeTwo.rotation.z -= 0.1
+  planeTwo.position.set(-300, 220, 420);
+  planeTwo.rotation.y -= 0.5;
   panorama2.add(planeTwo);
 
   const geometryThree = new THREE.PlaneGeometry(300, 300, 300);
