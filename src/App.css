@@ -655,7 +655,18 @@ a:link, a:visited {
     width: 80%;
   }
 
+  .info img {
+    width: 280px;
+  }
+
   .about-blurb p {
     font-size: 18px;
+  }
+
+  .about-title h2 {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
