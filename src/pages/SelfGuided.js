@@ -14,7 +14,6 @@ import seven from "../assets/spheres/seven.jpg";
 // Artworks
 import imagePlaceholder from "../assets/art/artworkPlaceholder.jpg";
 import gifPlaceholder from "../assets/gifs/gifPlaceholder.gif";
-import placeholder from "../assets/next.png";
 import sphere1 from "../assets/art/sphere1.gif";
 import sphere3 from "../assets/art/sphere3.gif";
 import sphere4 from "../assets/art/sphere4.gif";
