@@ -57,27 +57,27 @@ const SelfGuided = () => {
   
 
   // Link spheres
-  panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 1300, `${placeholder}`)
+  panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 800, PANOLENS.DataImage.Arrow)
 
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
-  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 1500, `${placeholder}`);
-  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 1500, `${placeholder}`);
+  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 950, PANOLENS.DataImage.Arrow);
+  // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 800, PANOLENS.DataImage.Arrow);
 
-  // panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
-  panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 1300, `${placeholder}`);
+  // panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
+  panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 800, PANOLENS.DataImage.Arrow);
 
-  // panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
-  panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 1300, `${placeholder}`);
+  // panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
+  panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 800, PANOLENS.DataImage.Arrow);
 
-  // panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
-  panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 1300, `${placeholder}`);
+  // panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
+  panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 800, PANOLENS.DataImage.Arrow);
 
-  // panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
-  panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 1300, `${placeholder}`);
+  // panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
+  panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 800, PANOLENS.DataImage.Arrow);
 
-  // panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
-  panorama7.link(panorama8, new THREE.Vector3(-7007.5, 504.88, -6000.0), 1700, `${placeholder}`);
+  // panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
+  panorama7.link(panorama8, new THREE.Vector3(-7007.5, 504.88, -6000.0), 1100, PANOLENS.DataImage.Arrow);
 
 
   // Create viewer and add panoramas
@@ -379,7 +379,7 @@ const SelfGuided = () => {
      side: THREE.DoubleSide,
    });
    const planeTen = new THREE.Mesh(geometryTen, materialTen);
-   planeTen.position.set(-100, 200, -350);
+   planeTen.position.set(-100, 150, -350);
    planeTen.rotation.y += 0.2;
    panorama7.add(planeTen);
 

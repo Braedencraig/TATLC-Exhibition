@@ -45,8 +45,8 @@ export default function About() {
         <div className="flex-two">
           <div className="info">
           <img src={image} alt="The artist, Laura Kay Keeling" />
-          <p className="infoText one"><a href="www.laurakaykeeling.com">www.laurakaykeeling.com</a></p>
-          <p className="infoText">Contact: <a href="mailto:infolaurakk@gmail.com">infolaurakk@gmail.com</a></p>
+          <p className="infoText one"><a target="_blank" href="https://www.laurakaykeeling.com/">laurakaykeeling.com</a></p>
+          <p className="infoText">Contact: <a target="_blank" href="mailto:infolaurakk@gmail.com">infolaurakk@gmail.com</a></p>
           <div className="socials">
             <SocialIcon
               fgColor="black"
@@ -136,9 +136,9 @@ export default function About() {
       <div className="about-blurb thanks">
           <div className="flex-contact">
             <p>
-              Thank you to the <a href="https://scotiabankcontactphoto.com/about/">Scotiabank CONTACT Photography Festival </a> for including The Advantages of Tender Loving Care as a Featured Exhibition in this year's festival.
+              Thank you to the <a target="_blank" href="https://scotiabankcontactphoto.com/about/">Scotiabank CONTACT Photography Festival </a> for including The Advantages of Tender Loving Care as a Featured Exhibition in this year's festival.
               </p>
-              <p>Thank you to the <a href="https://www.arts.on.ca/">Ontario Arts Council</a> for their generous exhibition support.
+              <p>Thank you to the <a target="_blank" href="https://www.arts.on.ca/">Ontario Arts Council</a> for their generous exhibition support.
             </p>
             <div className="img-flex">
               <img src={contact} alt="Scotiabank CONTACT Photography Festival Logo"/>

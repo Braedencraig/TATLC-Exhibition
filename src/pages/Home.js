@@ -23,7 +23,7 @@ export default function Home() {
         <p>
           Welcome to The Advantages of Tender Loving Care a Featured Exhibition in the Scotiabank CONTACT Photography Festival by Laura Kay Keeling. This exhibition features the first artworks in Keeling’s new series of moving images and collages that merge sourced imagery with scanned floral elements set in a naturalistic landscape with accompanying audio.
         </p>
-        <p>Instructions: Click or touch the flowers to move from sphere to sphere, and explore the immersive panoramas to discover Laura's works. You can zoom in and out by using your fingers or touchpad, pinching in to zoom-in, or stretching out to zoom-out.</p>
+        <p>Instructions: Click or touch the arrows to move from panorama to panorama, explore and discover Laura's works. You can zoom in and out with your fingers on a mobile device, or trackpad/mousewheel on a computer. Please mute your device if you do not want to hear the auditory portion of the exhibition.</p>
         <p>For a full image list with details about the works, please visit the <a href="/about">about page</a>. Thank you for being here!</p> 
       </div>
       <div className="cyoa-buttons">

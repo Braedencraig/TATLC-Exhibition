@@ -128,7 +128,7 @@ h2 {
 .intro-title,
 .about-title {
   font-size: 30px;
-  margin-top: 100px;
+  margin-top: 70px;
   text-align: center;
 }
 
@@ -171,7 +171,6 @@ h1 {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 2.5%;
   margin-bottom: 30px;
 }
 
@@ -231,10 +230,6 @@ a:hover {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-}
-
-.about-blurb {
-  margin-bottom: 20px;
 }
 
 .about-blurb-flex p {
@@ -416,14 +411,14 @@ video {
 }
 
 .artist h3, .land h3 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .about-title h2 {
   font-size: 40px;
 }
 
-.artist-blurb, .artist-blurb p, .land-blurb, .land-blurb p {
+.artist-blurb, .artist-blurb p, .land-blurb, .land-blurb p, .about-blurb p {
   margin-top: 0;
 }
 
@@ -498,7 +493,9 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px 0;
+  /* margin: 50px 0; */
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .flex-contact img.oac {
@@ -558,7 +555,7 @@ input {
 }
 
 .end h2 {
-  margin-top: 100px;
+  margin-top: 70px;
   width: 80%;
 }
 
@@ -581,7 +578,7 @@ a:link, a:visited {
 
 .about-blurb p {
   font-size: 26px;
-  text-align: left;
+  text-align: center;
   width: 75%;
 }
 
@@ -612,12 +609,24 @@ a:link, a:visited {
   opacity: 0.7;
 }
 
+.cyoa-buttons {
+  margin-top: 30px;
+}
+
 @media only screen and (max-width: 1200px) {
-  .intro-title h1, .end h2 {
-    font-size: 40px;
+  .intro-title h1, .about-title h2, .end h2 {
+    font-size: 30px;
     width: 65%;
     margin: 0 auto;
     margin-bottom: 10px;
+  }
+
+  .cyoa-buttons {
+    margin-top: 0;
+  }
+
+  .intro-title {
+    margin-top: 70px;
   }
 
   .intro-title h2, .end p {
@@ -627,6 +636,7 @@ a:link, a:visited {
 
   .intro-text p {
     font-size: 16px;
+    text-align: center;
   }
 
   .artist-flex-big {
@@ -646,17 +656,21 @@ a:link, a:visited {
   .info img {
     max-width: 400px;
   }
+
+  .bm-burger-button {
+    position: fixed;
+    width: 30px;
+    height: 25px;
+    right: 30px;
+    top: 30px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
   
   .end h2 {
-    margin-top: 150px;
+    margin-top: 70px;
     width: 80%;
-  }
-
-  .info img {
-    width: 280px;
   }
 
   .about-blurb p {
@@ -670,3 +684,13 @@ a:link, a:visited {
     margin-bottom: 30px;
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+  .info img {
+    max-width: 280px;
+  }
+}
+
+
+
