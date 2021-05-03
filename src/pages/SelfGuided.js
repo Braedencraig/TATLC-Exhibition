@@ -106,8 +106,6 @@ const SelfGuided = () => {
   });
 
   panorama2.addEventListener( 'enter-fade-start', function(){
-    console.log('HERE WE CAN DO LOAD ONCLICK')
-
     container.classList.add('fade-in')
     viewer.tweenControlCenter( lookAtPositions[1], 0 );
     setTimeout(() => {

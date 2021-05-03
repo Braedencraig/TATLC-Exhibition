@@ -128,7 +128,7 @@ h2 {
 .intro-title,
 .about-title {
   font-size: 30px;
-  margin-top: 150px;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -558,7 +558,7 @@ input {
 }
 
 .end h2 {
-  margin-top: 150px;
+  margin-top: 100px;
   width: 80%;
 }
 
