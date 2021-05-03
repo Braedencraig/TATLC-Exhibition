@@ -14,6 +14,7 @@ import seven from "../assets/spheres/seven.jpg";
 // Artworks
 import imagePlaceholder from "../assets/art/artworkPlaceholder.jpg";
 import gifPlaceholder from "../assets/gifs/gifPlaceholder.gif";
+import placeholder from "../assets/next.png";
 import sphere1 from "../assets/art/sphere1.gif";
 import sphere3 from "../assets/art/sphere3.gif";
 import sphere4 from "../assets/art/sphere4.gif";
@@ -36,13 +37,6 @@ const SelfGuided = () => {
       panorama6, 
       panorama7,
       panorama8,
-      infospot,
-      infospot2,
-      infospot3,
-      infospot4,
-      infospot5,
-      infospot6,
-      infospot7,
       viewer;
 
   // Create spheres
@@ -57,84 +51,33 @@ const SelfGuided = () => {
 
   var lookAtPositions = [
     new THREE.Vector3(-207.5, -704.88, -6000.0),
-    new THREE.Vector3(-207.5, -704.88, -6000.0),
-    new THREE.Vector3(-207.5, -704.88, -6000.0)
+    new THREE.Vector3(-6907.5, 304.88, 1000.0),
+    new THREE.Vector3(-7007.5, 504.88, -6000.0)
   ];
   
 
   // Link spheres
-  // panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 1300, `${placeholder}`)
-  infospot = new PANOLENS.Infospot( 600, PANOLENS.DataImage.Arrow );
-  infospot.position.set( -100, -500, -5000 );
-  infospot.addEventListener( 'click', function(){
-    viewer.setPanorama( panorama2 );
-  } );
-  panorama1.add( infospot );
-
-  infospot2 = new PANOLENS.Infospot( 600, PANOLENS.DataImage.Arrow );
-  infospot2.position.set( -100, -500, -5000 );
-  infospot2.addEventListener( 'click', function(){
-    viewer.setPanorama( panorama3 );
-  } );
-  panorama2.add( infospot2 );
-
-  infospot3 = new PANOLENS.Infospot( 600, PANOLENS.DataImage.Arrow );
-  infospot3.position.set( -100, -500, -5000 );
-  infospot3.addEventListener( 'click', function(){
-    viewer.setPanorama( panorama4 );
-  } );
-  panorama3.add( infospot3 );
-
-  infospot4 = new PANOLENS.Infospot( 600, PANOLENS.DataImage.Arrow );
-  infospot4.position.set( -100, -500, -5000 );
-  infospot4.addEventListener( 'click', function(){
-    viewer.setPanorama( panorama5 );
-  } );
-  panorama4.add( infospot4 );
-
-  infospot5 = new PANOLENS.Infospot( 600, PANOLENS.DataImage.Arrow );
-  infospot5.position.set( -100, -500, -5000 );
-  infospot5.addEventListener( 'click', function(){
-    viewer.setPanorama( panorama6 );
-  } );
-  panorama5.add( infospot5 );
-
-  infospot6 = new PANOLENS.Infospot( 600, PANOLENS.DataImage.Arrow );
-  infospot6.position.set( -100, -500, -5000 );
-  infospot6.addEventListener( 'click', function(){
-    viewer.setPanorama( panorama7 );
-  } );
-  panorama6.add( infospot6 );
-
-  infospot7 = new PANOLENS.Infospot( 600, PANOLENS.DataImage.Arrow );
-  infospot7.position.set( -100, -500, -5000 );
-  infospot7.addEventListener( 'click', function(){
-    viewer.setPanorama( panorama8 );
-  } );
-  panorama7.add( infospot7 );
-
-
-
+  panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 1300, `${placeholder}`)
 
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
-  // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 1500, `${placeholder}`);
-  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 10e-7);
+  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 1500, `${placeholder}`);
+  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 1500, `${placeholder}`);
 
-  // panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, );
-  panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 10e-7);
+  // panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
+  panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 1300, `${placeholder}`);
 
-  // panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, );
-  panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 10e-7);
+  // panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
+  panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 1300, `${placeholder}`);
 
-  // panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, );
-  panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 10e-7);
+  // panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
+  panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 1300, `${placeholder}`);
 
-  // panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, );
-  panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 10e-7);
+  // panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
+  panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 1300, `${placeholder}`);
 
-  // panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, );
-  panorama7.link(panorama8, new THREE.Vector3(-7007.5, 504.88, -6000.0), 10e-7);
+  // panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, `${placeholder}`);
+  panorama7.link(panorama8, new THREE.Vector3(-7007.5, 504.88, -6000.0), 1700, `${placeholder}`);
 
 
   // Create viewer and add panoramas
