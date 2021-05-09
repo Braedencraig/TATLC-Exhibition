@@ -270,7 +270,7 @@ export default function About() {
               </p>
               <p>Thank you to the <a target="_blank" rel="noreferrer" href="https://www.arts.on.ca/">Ontario Arts Council</a> for their generous exhibition support.
             </p>
-            <p>Thank you to Braeden Craig for developing this virtual exhibition.
+            <p>Thank you to <a target="_blank" rel="noreferrer" href="https://www.github.com/braedencraig">Braeden Craig</a> for developing this virtual exhibition.
             </p>
             <div className="img-flex">
               <img src={contact} alt="Scotiabank CONTACT Photography Festival Logo"/>

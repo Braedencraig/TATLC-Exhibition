@@ -192,7 +192,7 @@ h1 {
 }
 
 .image-detail:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 
 .image-detail .sphere-title {
@@ -208,6 +208,7 @@ h1 {
   width: 60%;
   margin: 0;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .intro-text p,
@@ -528,7 +529,7 @@ input {
 
 .thanks {
   font-weight: bold;
-  margin-top: 2%;
+  margin-top: 30px;
 }
 
 .thanks a {
@@ -567,7 +568,6 @@ input {
 
 .image-details {
   text-align: center;
-  margin: 2% 0;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -742,6 +742,10 @@ a:link, a:visited {
   .end h2 {
     margin-top: 70px;
     width: 80%;
+  }
+
+  .artist-blurb {
+    margin-bottom: 0px;
   }
 
   .about-blurb p {
