@@ -13,11 +13,19 @@ import six from "../assets/spheres/six.jpg";
 import seven from "../assets/spheres/seven.jpg";
 // Artworks
 import imagePlaceholder from "../assets/art/artworkPlaceholder.jpg";
-import gifPlaceholder from "../assets/gifs/gifPlaceholder.gif";
-import sphere1 from "../assets/art/sphere1.gif";
 import sphere3 from "../assets/art/sphere3.gif";
-import sphere4 from "../assets/art/sphere4.gif";
 import sphere7 from "../assets/art/sphere7.gif";
+// GOOD COPY ART
+import sphereOneArt from '../assets/art/sphereOneArt.jpg'
+import sphereTwoArt from '../assets/art/sphereTwoArt.gif'
+import sphereFourArt1 from '../assets/art/sphereFourArt1.jpg'
+import sphereFourArt2 from '../assets/art/sphereFourArt2.gif'
+import sphereFiveArt1 from '../assets/art/sphereFiveArt1.gif'
+import sphereFiveArt2 from '../assets/art/sphereFiveArt2.gif'
+import sphereSixArt from '../assets/art/sphereSixArt.gif'
+
+
+
 // Audio
 import audio from "../assets/audio/audio.mp3"
 
@@ -166,23 +174,9 @@ const SelfGuided = () => {
 
   // // Sphere one artwork - contains one
   const geometryOne = new THREE.PlaneGeometry(300, 400, 200);
-  const textureOne = loader.load(
-    sphere1,
-    // onLoad callback
-    function (reader) {
-      console.log(reader.numFrames());
-    },
-    // onProgress callback
-    function (xhr) {
-      console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
-    },
-    // onError callback
-    function () {
-      console.error("An error happened.");
-    }
-  );
+  const loaderOne = new THREE.TextureLoader();
   const materialOne = new THREE.MeshBasicMaterial({
-    map: textureOne,
+    map: loaderOne.load(sphereOneArt),
     side: THREE.DoubleSide,
   });
   const planeOne = new THREE.Mesh(geometryOne, materialOne);
@@ -192,7 +186,7 @@ const SelfGuided = () => {
 
   // // Sphere two artwork - contains two & three
   const textureTwo = loader.load(
-    gifPlaceholder,
+    sphereTwoArt,
     // onLoad callback
     function (reader) {
       console.log(reader.numFrames());
@@ -255,9 +249,9 @@ const SelfGuided = () => {
   panorama3.add(planeFour);
 
   // Sphere four artwork - contains five & six
-  const geometryFive = new THREE.PlaneGeometry(250, 350, 250);
+  const geometryFive = new THREE.PlaneGeometry(300, 300, 250);
   const textureFive = loader.load(
-    sphere4,
+    sphereFourArt2,
     // onLoad callback
     function (reader) {
       console.log(reader.numFrames());
@@ -280,8 +274,27 @@ const SelfGuided = () => {
   planeFive.rotation.y += 1.7;
   panorama4.add(planeFive);
 
-  const textureSix = loader.load(
-    gifPlaceholder,
+  const loaderSix = new THREE.TextureLoader();
+  const materialSix = new THREE.MeshBasicMaterial({
+    map: loaderSix.load(sphereFourArt1),
+    side: THREE.DoubleSide,
+  });
+  const geometrySix = new THREE.PlaneGeometry(250, 350, 250);
+  const planeSix = new THREE.Mesh(geometrySix, materialSix);
+  planeSix.position.set(350, 100, -60);
+  planeSix.rotation.y += 1.7;
+  panorama4.add(planeSix);
+
+  // // Sphere five artwork - contains seven & eight
+  // const geometrySeven = new THREE.PlaneGeometry(300, 300, 300);
+  // const loaderSeven = new THREE.TextureLoader();
+  // const materialSeven = new THREE.MeshBasicMaterial({
+  //   map: loaderSeven.load(imagePlaceholder),
+  //   side: THREE.DoubleSide,
+  // });
+  // const planeSeven = new THREE.Mesh(geometrySeven, materialSeven);
+  const textureSeven = loader.load(
+    sphereFiveArt1,
     // onLoad callback
     function (reader) {
       console.log(reader.numFrames());
@@ -295,31 +308,19 @@ const SelfGuided = () => {
       console.error("An error happened.");
     }
   );
-  const materialSix = new THREE.MeshBasicMaterial({
-    map: textureSix,
+  const materialSeven = new THREE.MeshBasicMaterial({
+    map: textureSeven,
     // transparent: true,
     side: THREE.DoubleSide,
   });
-  const geometrySix = new THREE.PlaneGeometry(250, 250, 250);
-  const planeSix = new THREE.Mesh(geometrySix, materialSix);
-  planeSix.position.set(350, 100, -60);
-  planeSix.rotation.y += 1.7;
-  panorama4.add(planeSix);
-
-  // // Sphere five artwork - contains seven & eight
   const geometrySeven = new THREE.PlaneGeometry(300, 300, 300);
-  const loaderSeven = new THREE.TextureLoader();
-  const materialSeven = new THREE.MeshBasicMaterial({
-    map: loaderSeven.load(imagePlaceholder),
-    side: THREE.DoubleSide,
-  });
   const planeSeven = new THREE.Mesh(geometrySeven, materialSeven);
   planeSeven.position.set(-350, 100, 10);
   planeSeven.rotation.y += 1.7;
   panorama5.add(planeSeven);
 
   const textureEight = loader.load(
-    gifPlaceholder,
+    sphereFiveArt2,
     // onLoad callback
     function (reader) {
       console.log(reader.numFrames());
@@ -345,12 +346,27 @@ const SelfGuided = () => {
   panorama5.add(planeEight);
 
   //  // Sphere six artwork - contains nine
-   const geometryNine = new THREE.PlaneGeometry(300, 300, 300);
-   const loaderNine = new THREE.TextureLoader();
-   const materialNine = new THREE.MeshBasicMaterial({
-     map: loaderNine.load(imagePlaceholder),
-     side: THREE.DoubleSide,
-   });
+   const geometryNine = new THREE.PlaneGeometry(250, 350, 300);
+   const textureNine = loader.load(
+    sphereSixArt,
+    // onLoad callback
+    function (reader) {
+      console.log(reader.numFrames());
+    },
+    // onProgress callback
+    function (xhr) {
+      console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
+    },
+    // onError callback
+    function () {
+      console.error("An error happened.");
+    }
+  );
+  const materialNine = new THREE.MeshBasicMaterial({
+    map: textureNine,
+    // transparent: true,
+    side: THREE.DoubleSide,
+  });
    const planeNine = new THREE.Mesh(geometryNine, materialNine);
    planeNine.position.set(-350, 160, -220);
    planeNine.rotation.y += 1;
