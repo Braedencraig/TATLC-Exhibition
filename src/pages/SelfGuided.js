@@ -56,34 +56,34 @@ const SelfGuided = () => {
   panorama8 = new PANOLENS.ImagePanorama(one);
 
   var lookAtPositions = [
-    new THREE.Vector3(-207.5, -704.88, -6000.0),
-    new THREE.Vector3(-6907.5, 304.88, 1000.0),
+    new THREE.Vector3(-207.5, -504.88, -6000.0),
+    new THREE.Vector3(-207.5, -504.88, -6000.0),
     new THREE.Vector3(-7007.5, 504.88, -6000.0)
   ];
   
 
   // Link spheres
-  panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow)
+  panorama1.link(panorama2, new THREE.Vector3(-207.5, 504.88, -6000.0), 1500, PANOLENS.DataImage.Arrow)
 
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
-  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 1000, PANOLENS.DataImage.Arrow);
+  panorama2.link(panorama3, new THREE.Vector3(-207.5, 504.88, -6000.0), 1500, PANOLENS.DataImage.Arrow);
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 800, PANOLENS.DataImage.Arrow);
 
   // panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
-  panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
+  panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 1500, PANOLENS.DataImage.Arrow);
 
   // panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
-  panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
+  panorama4.link(panorama5, new THREE.Vector3(-207.5, 504.88, -6000.0), 1500, PANOLENS.DataImage.Arrow);
 
   // panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
-  panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
+  panorama5.link(panorama6, new THREE.Vector3(-207.5, 504.88, -6000.0), 1500, PANOLENS.DataImage.Arrow);
 
   // panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
-  panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
+  panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 1500, PANOLENS.DataImage.Arrow);
 
   // panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
-  panorama7.link(panorama8, new THREE.Vector3(-7007.5, 504.88, -6000.0), 1300, PANOLENS.DataImage.Arrow);
+  panorama7.link(panorama8, new THREE.Vector3(-7007.5, 504.88, -6000.0), 1600, PANOLENS.DataImage.Arrow);
 
 
   // Create viewer and add panoramas
