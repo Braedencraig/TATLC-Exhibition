@@ -67,7 +67,10 @@ const SelfGuided = () => {
 
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
-  panorama2.link(panorama3, new THREE.Vector3(-207.5, 504.88, -6000.0), 1500);
+  if(window.innerWidth < 768) {
+    panorama2.link(panorama3, new THREE.Vector3(-207.5, 504.88, -6000.0), 1500);
+  }
+  // panorama2.link(panorama3, new THREE.Vector3(-207.5, 504.88, -6000.0), 1500);
   panorama2.link(panorama3, new THREE.Vector3(-207.5, 504.88, -6000.0), 1500);
 
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 800, PANOLENS.DataImage.Arrow);
@@ -89,7 +92,7 @@ const SelfGuided = () => {
 
 
   // Create viewer and add panoramas
-  viewer = new PANOLENS.Viewer({ autoHideInfospot: false, controlBar: false });
+  viewer = new PANOLENS.Viewer({ autoHideInfospot: false, controlBar: false, cameraFov: 80 });
   viewer.add(panorama1);
   viewer.add(panorama2);
   viewer.add(panorama3);
@@ -99,9 +102,9 @@ const SelfGuided = () => {
   viewer.add(panorama7);
   viewer.add(panorama8);
 
-  viewer.addUpdateCallback(function(){
+  // viewer.addUpdateCallback(function(){
   
-  });
+  // });
 
   const container = document.getElementsByClassName('panolens-container')[0]
 
