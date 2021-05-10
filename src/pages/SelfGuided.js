@@ -67,7 +67,7 @@ const SelfGuided = () => {
 
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
-  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 1150, PANOLENS.DataImage.Arrow);
+  panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 1000, PANOLENS.DataImage.Arrow);
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 800, PANOLENS.DataImage.Arrow);
 
   // panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
