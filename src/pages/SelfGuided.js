@@ -33,6 +33,12 @@ const SelfGuided = () => {
   useEffect(() => {
     const body = document.getElementsByTagName('body')[0]
     body.style.overflow = 'hidden'
+    const panolens = Array.from(document.getElementsByClassName('panolens-container'))
+    panolens.forEach((e,i) => {
+      if(i !== 0) {
+        e.remove()
+      }
+    })
   }, [])
 
   let panorama1, 
@@ -195,15 +201,15 @@ const SelfGuided = () => {
     sphereTwoArt,
     // onLoad callback
     function (reader) {
-      console.log(reader.numFrames());
+      // console.log(reader.numFrames());
     },
     // onProgress callback
     function (xhr) {
-      console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
+      // console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
     },
     // onError callback
     function () {
-      console.error("An error happened.");
+      // console.error("An error happened.");
     }
   );
   const materialTwo = new THREE.MeshBasicMaterial({
@@ -225,15 +231,15 @@ const SelfGuided = () => {
     sphere3,
     // onLoad callback
     function (reader) {
-      console.log(reader.numFrames());
+      // console.log(reader.numFrames());
     },
     // onProgress callback
     function (xhr) {
-      console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
+      // console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
     },
     // onError callback
     function () {
-      console.error("An error happened.");
+      // console.error("An error happened.");
     }
   );
   const materialFour = new THREE.MeshBasicMaterial({
@@ -251,15 +257,15 @@ const SelfGuided = () => {
     sphereFourArt2,
     // onLoad callback
     function (reader) {
-      console.log(reader.numFrames());
+      // console.log(reader.numFrames());
     },
     // onProgress callback
     function (xhr) {
-      console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
+      // console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
     },
     // onError callback
     function () {
-      console.error("An error happened.");
+      // console.error("An error happened.");
     }
   );
   const materialFive = new THREE.MeshBasicMaterial({
@@ -287,15 +293,15 @@ const SelfGuided = () => {
     sphereFiveArt1,
     // onLoad callback
     function (reader) {
-      console.log(reader.numFrames());
+      // console.log(reader.numFrames());
     },
     // onProgress callback
     function (xhr) {
-      console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
+      // console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
     },
     // onError callback
     function () {
-      console.error("An error happened.");
+      // console.error("An error happened.");
     }
   );
   const materialSeven = new THREE.MeshBasicMaterial({
@@ -313,15 +319,15 @@ const SelfGuided = () => {
     sphereFiveArt2,
     // onLoad callback
     function (reader) {
-      console.log(reader.numFrames());
+      // console.log(reader.numFrames());
     },
     // onProgress callback
     function (xhr) {
-      console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
+      // console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
     },
     // onError callback
     function () {
-      console.error("An error happened.");
+      // console.error("An error happened.");
     }
   );
   const materialEight = new THREE.MeshBasicMaterial({
@@ -341,15 +347,15 @@ const SelfGuided = () => {
     sphereSixArt,
     // onLoad callback
     function (reader) {
-      console.log(reader.numFrames());
+      // console.log(reader.numFrames());
     },
     // onProgress callback
     function (xhr) {
-      console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
+      // console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
     },
     // onError callback
     function () {
-      console.error("An error happened.");
+      // console.error("An error happened.");
     }
   );
   const materialNine = new THREE.MeshBasicMaterial({
@@ -368,15 +374,15 @@ const SelfGuided = () => {
     sphere7,
     // onLoad callback
     function (reader) {
-      console.log(reader.numFrames());
+      // console.log(reader.numFrames());
     },
     // onProgress callback
     function (xhr) {
-      console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
+      // console.log(`${(xhr.loaded / xhr.total) * 100}% loaded`);
     },
     // onError callback
     function () {
-      console.error("An error happened.");
+      // console.error("An error happened.");
     }
   );
    const materialTen = new THREE.MeshBasicMaterial({
