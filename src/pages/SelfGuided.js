@@ -88,7 +88,7 @@ const SelfGuided = () => {
   panorama6.link(panorama7, new THREE.Vector3(-207.5, 504.88, -6000.0), 1500);
 
   // panorama7.link(panorama8, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
-  panorama7.link(panorama8, new THREE.Vector3(-7007.5, 504.88, -6000.0), 1800);
+  panorama7.link(panorama8, new THREE.Vector3(-7007.5, 504.88, -6000.0), 1900);
 
 
   // Create viewer and add panoramas
