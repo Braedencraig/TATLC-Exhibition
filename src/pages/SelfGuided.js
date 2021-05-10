@@ -12,7 +12,6 @@ import five from "../assets/spheres/five.jpg";
 import six from "../assets/spheres/six.jpg";
 import seven from "../assets/spheres/seven.jpg";
 // Artworks
-import imagePlaceholder from "../assets/art/artworkPlaceholder.jpg";
 import sphere3 from "../assets/art/sphere3.gif";
 import sphere7 from "../assets/art/sphere7.gif";
 // GOOD COPY ART
@@ -182,6 +181,8 @@ const SelfGuided = () => {
   const planeOne = new THREE.Mesh(geometryOne, materialOne);
   planeOne.position.set(-30, 230, 340);
   planeOne.rotation.x -= 0.3;
+  planeOne.scale.x = -1;
+
   panorama1.add(planeOne);
 
   // // Sphere two artwork - contains two & three
@@ -209,18 +210,8 @@ const SelfGuided = () => {
   const planeTwo = new THREE.Mesh(geometryTwo, materialTwo);
   planeTwo.position.set(-300, 220, 420);
   planeTwo.rotation.y -= 0.55;
+  planeTwo.scale.x = -1;
   panorama2.add(planeTwo);
-
-  const geometryThree = new THREE.PlaneGeometry(400, 400, 400);
-  const loaderThree = new THREE.TextureLoader();
-  const materialThree = new THREE.MeshBasicMaterial({
-    map: loaderThree.load(imagePlaceholder),
-    side: THREE.DoubleSide,
-  });
-  const planeThree = new THREE.Mesh(geometryThree, materialThree);
-  planeThree.position.set(10, 410, -440);
-  planeThree.rotation.x += 0.4;
-  panorama2.add(planeThree);
 
   // // Sphere three artwork - contains four
   const geometryFour = new THREE.PlaneGeometry(400, 300, 400);
@@ -286,13 +277,6 @@ const SelfGuided = () => {
   panorama4.add(planeSix);
 
   // // Sphere five artwork - contains seven & eight
-  // const geometrySeven = new THREE.PlaneGeometry(300, 300, 300);
-  // const loaderSeven = new THREE.TextureLoader();
-  // const materialSeven = new THREE.MeshBasicMaterial({
-  //   map: loaderSeven.load(imagePlaceholder),
-  //   side: THREE.DoubleSide,
-  // });
-  // const planeSeven = new THREE.Mesh(geometrySeven, materialSeven);
   const textureSeven = loader.load(
     sphereFiveArt1,
     // onLoad callback
