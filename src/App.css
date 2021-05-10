@@ -8,6 +8,10 @@ body {
   color: white;
 }
 
+body > div.panolens-container {
+  background-color: #444444 !important;
+}
+
 a:link,
 a:visited {
   color: #444444;
