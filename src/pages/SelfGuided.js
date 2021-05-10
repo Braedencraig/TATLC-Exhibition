@@ -212,6 +212,7 @@ const SelfGuided = () => {
   planeTwo.rotation.y -= 0.55;
   planeTwo.scale.x = -1;
   panorama2.add(planeTwo);
+  
 
   // // Sphere three artwork - contains four
   const geometryFour = new THREE.PlaneGeometry(400, 300, 400);
