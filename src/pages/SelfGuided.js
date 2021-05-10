@@ -31,14 +31,14 @@ import audio from "../assets/audio/audio.mp3"
 const SelfGuided = () => {  
 
   useEffect(() => {
-    const body = document.getElementsByTagName('body')[0]
-    body.style.overflow = 'hidden'
     const panolens = Array.from(document.getElementsByClassName('panolens-container'))
     panolens.forEach((e,i) => {
       if(i !== 0) {
         e.remove()
       }
     })
+    const body = document.getElementsByTagName('body')[0]
+    body.style.overflow = 'hidden'
   }, [])
 
   let panorama1, 
