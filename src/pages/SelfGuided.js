@@ -68,6 +68,8 @@ const SelfGuided = () => {
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 600);
   panorama2.link(panorama3, new THREE.Vector3(-207.5, 504.88, -6000.0), 1500);
+  panorama2.link(panorama3, new THREE.Vector3(-207.5, 504.88, -6000.0), 1500);
+
   // panorama2.link(panorama3, new THREE.Vector3(-6907.5, 304.88, 1000.0), 800, PANOLENS.DataImage.Arrow);
 
   // panorama3.link(panorama4, new THREE.Vector3(-207.5, 504.88, -6000.0), 1000, PANOLENS.DataImage.Arrow);
@@ -87,7 +89,7 @@ const SelfGuided = () => {
 
 
   // Create viewer and add panoramas
-  viewer = new PANOLENS.Viewer({ autoHideInfospot: false, controlBar: false, cameraFov: 70 });
+  viewer = new PANOLENS.Viewer({ autoHideInfospot: false, controlBar: false });
   viewer.add(panorama1);
   viewer.add(panorama2);
   viewer.add(panorama3);
