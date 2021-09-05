@@ -121,9 +121,9 @@ export default function Guided() {
   }
 
   function sphereFour() {
-    delayExecute(sphereFourArt1.focus.bind(sphereFourArt1, 10000), tweeningDelay);
+    delayExecute(sphereFourArt2.focus.bind(sphereFourArt2, 10000), tweeningDelay);
     setTimeout(() => {
-      delayExecute(sphereFourArt2.focus.bind(sphereFourArt2, 10000), tweeningDelay);
+      delayExecute(sphereFourArt1.focus.bind(sphereFourArt1, 10000), tweeningDelay);
         setTimeout(() => {
         viewer.remove(panorama4)
         viewer.setPanorama(panorama5)
