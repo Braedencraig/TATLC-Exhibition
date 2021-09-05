@@ -2,6 +2,8 @@ import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import SelfGuided from "./pages/SelfGuided";
+import Guided from "./pages/Guided";
+import GuidedTwo from "./pages/GuidedTwo";
 import Burger from "./components/Burger";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -18,6 +20,12 @@ function App() {
           </Route>
           <Route path="/self-guided">
             <SelfGuided />
+          </Route>
+          <Route path="/guided-one">
+            <Guided />
+          </Route>
+          <Route path="/guided-two">
+            <GuidedTwo />
           </Route>
           <Route path="/">
             <Home />
